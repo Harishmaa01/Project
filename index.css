@@ -1,0 +1,873 @@
+* {
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Work sans;
+  }
+    #menu {
+      display: none;
+      color: #fff;
+    }
+    .navbar {
+      display: flex;
+      background-color: black;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+    .navbar a h3 {
+      padding-right: 300px;
+    }
+    .links {
+      display: flex;
+      text-decoration: none;
+      color: #fff;
+      list-style-type: none;
+      justify-content: right;
+    }
+    .links a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+    .icons {
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+      color: #fff;
+      padding: 10px;
+    }
+    .icons a {
+      text-decoration: none;
+      color: #fff;
+      padding: 20px;
+    }
+  .container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    flex-wrap: wrap-reverse;
+  }
+  #review-image {
+    width: 550px;
+    height: 400px;
+    animation: shutter 0.5s ease 0s 1 normal forwards;
+  }
+  #review-image:not-visited {
+    display: hidden;
+  }
+  #datep {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Work sans;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #reviewp {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bolder;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #read-button {
+    width: 180px;
+    height: 60px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 30px;
+    border: solid #000;
+    cursor: pointer;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #read-button:hover {
+    background-color: rgb(237, 102, 102);
+  }
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    gap: 40px;
+    padding-left: 30px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  .container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 90px;
+  }
+  #stream-image {
+    width: 600px;
+    height: 400px;
+    animation: shutter 0.5s ease 0s 1 normal forwards;
+  }
+  .container3 h3 {
+    color: #ffffff;
+    font-size: 40px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #grid1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+  #t2 {
+    color: #ffffff;
+    font-size: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #t3 {
+    color: #fff;
+    font-size: 15px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #t4 {
+    grid-column: 1 / span 2;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #t1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #full-button {
+    width: 300px;
+    height: 70px;
+    color: #fff;
+    background-color: #ff0000;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 35px;
+    border: solid #000;
+    cursor: pointer;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #full-button:hover {
+    background-color: rgb(237, 102, 102);
+  }
+  .container4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #000;
+    padding: 0px 60px;
+  }
+  #c1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 40px 0px;
+  }
+  #c1 > h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  .container4 p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #video {
+    width: 350px;
+    height: 250px;
+    position: relative;
+  }
+  
+  #poster1:hover {
+    display: none;
+  }
+  
+  #poster1 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1436px;
+    left: 60px;
+  }
+  #poster2 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1436px;
+    left: 456.5px;
+  }
+  #poster2:hover {
+    display: none;
+  }
+  #poster3 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1436px;
+    left: 853px;
+  }
+  #poster3:hover {
+    display: none;
+  }
+  #poster4 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1772px;
+    left: 60px;
+  }
+  #poster4:hover {
+    display: none;
+  }
+  #poster5 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1772px;
+    left: 456.5px;
+  }
+  #poster5:hover {
+    display: none;
+  }
+  #poster6 {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 1772px;
+    left: 853px;
+  }
+  #poster6:hover {
+    display: none;
+  }
+  
+  .container5 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 60px;
+  }
+  #ts {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: red;
+  }
+  #shop {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 50px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #ts1 {
+    width: 500px;
+    height: 500px;
+    animation: shutter 0.5s ease 0s 1 normal forwards;
+    cursor: pointer;
+  }
+  #ts2 {
+    width: 500px;
+    height: 500px;
+    animation: shutter 0.5s ease 0s 1 normal forwards;
+    cursor: pointer;
+  }
+  #tpara {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #down {
+    padding-top: 150px;
+  }
+  .container6 {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    padding: 50px 0px;
+  }
+  #eheading {
+    color: #fff;
+    font-size: 50px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #epara {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #exclusive-image {
+    width: 550px;
+    height: 400px;
+    animation: shutter 0.5s ease 0s 1 normal forwards;
+  }
+  #get-button {
+    width: 200px;
+    height: 60px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 30px;
+    border: solid #000;
+    cursor: pointer;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #get-button:hover {
+    background-color: rgb(237, 102, 102);
+  }
+  .container7 {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    text-align: center;
+    align-items: baseline;
+  }
+  .container7 h4 {
+    font-size: 15px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    font-weight: bolder;
+  }
+  .container7 a {
+    color: #000;
+    font-size: 12px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #para7 {
+    font-size: 12px;
+  }
+  .container7 i {
+    font-size: 20px;
+  }
+  input {
+    width: 250px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 15px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #sub-button {
+    width: 150px;
+    height: 60px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 30px;
+    border: solid 1px gray;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    cursor: pointer;
+  }
+  #sub-button:hover {
+    background-color: #766e6e;
+  }
+  #loop {
+    padding-bottom: 20px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  #follow {
+    padding-bottom: 30px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  
+  .stick {
+    position: fixed;
+    bottom: 5px;
+    right: 0px;
+  }
+  .stick .fix {
+    display: flex;
+    background-color: black;
+    padding: 15px 25px;
+    height: 70px;
+    width: 280px;
+    position: sticky;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .stick .fix .fixtag img {
+    height: 25px;
+    width: 25px;
+    float: left;
+    align-items: center;
+  }
+  .stick .fix .fixtag p {
+    font-size: 15px;
+    padding-left: 20px;
+    color: white;
+    float: right;
+  }
+  .stick .fix .fixtag p span {
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(92, 88, 88);
+  }
+  .stick a::before {
+    background: rgb(134, 130, 130);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    opacity: 0.4;
+  }
+  
+  .stick a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  @keyframes shutter {
+    0% {
+      transform: scaleX(0);
+      transform-origin: 0% 0%;
+    }
+  
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    * {
+      margin: auto;
+      padding: 0%;
+      box-sizing: border-box;
+      width: 100%;
+      padding-right: -20px;
+    }
+    .links {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+    .logo {
+      padding-left: 50px;
+    }
+  
+    .container1 {
+      flex-direction: column-reverse;
+      gap: 20px;
+      padding-left: 50px;
+      width: 100%;
+    }
+    .container1 #reviewp {
+      font-size: 40px;
+    }
+    .container1 #review-image {
+      width: 250px;
+      height: 150px;
+    }
+    .container2 {
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-bottom: -50px;
+      width: 100%;
+    }
+    .container2 h3 {
+      padding-left: 0px;
+    }
+    .container2 p {
+      padding-left: 0px;
+    }
+    .container3 {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    #grid1 {
+      padding-right: 40px;
+    }
+    .container3 #stream-image {
+      width: 250px;
+      height: 125px;
+    }
+    #t1 {
+      padding-right: 30px;
+      font-size: 20px;
+    }
+    #t2 {
+      font-size: 15px;
+      padding-right: 30px;
+    }
+    #t3 {
+      font-size: 10px;
+      padding-right: 30px;
+    }
+  
+    .container4 {
+      display: none;
+      width: 100%;
+    }
+    .container4 #grid1 {
+      padding-left: 50px;
+    }
+    #full-button {
+      width: 190px;
+      height: 50px;
+    }
+    #video {
+      display: none;
+    }
+    .container4 p {
+      display: none;
+    }
+    .container4 h2 {
+      display: none;
+    }
+    #poster1,
+    #poster2,
+    #poster3,
+    #poster4,
+    #poster5,
+    #poster6 {
+      display: none;
+    }
+    .container4 {
+      margin-top: -300px;
+    }
+  
+    .container5 {
+      display: grid;
+      grid-template-rows: auto;
+      width: 100%;
+    }
+    #shop {
+      font-size: 35px;
+      text-align: center;
+    }
+    #ts {
+      padding-left: 100px;
+    }
+    .container5 #ts1 {
+      width: 200px;
+      height: 200px;
+    }
+    .container5 #ts2 {
+      width: 200px;
+      height: 200px;
+    }
+    .container6 {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    #eheading {
+      font-size: 40px;
+    }
+    .container6 div {
+      padding-left: 15px;
+    }
+    .container6 #exclusive-image {
+      width: 250px;
+      height: 150px;
+    }
+    .container7 {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+    #sub-button {
+      margin: 15px;
+    }
+    .stick {
+      display: none;
+    }
+    .stick .fix {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    * {
+      margin: auto;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    .links {
+      display: none;
+    }
+    .icons a {
+      display: none;
+    }
+    .logo {
+      text-align: center;
+      justify-content: center;
+    }
+    #menu {
+      display: block;
+    }
+    .container1 {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    #reviewp {
+      font-size: 50px;
+    }
+    #review-image {
+      width: 350px;
+      height: 200px;
+    }
+    .container2 {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+    .container2 p {
+      padding-left: 100px;
+    }
+    .container3 {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 60px;
+    }
+    #stream-image {
+      width: 350px;
+      height: 200px;
+    }
+    .container4 {
+      display: grid;
+      grid-template-rows: auto auto;
+    }
+    #c1 > h2 {
+      font-size: 40px;
+      font-weight: bolder;
+      animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+    .container4 div #video {
+      width: 150px;
+      height: 75px;
+    }
+    .container4 div #poster1 {
+      width: 150px;
+      height: 75px;
+      top: 1920px;
+    }
+    .container4 div #poster2 {
+      width: 150px;
+      height: 75px;
+      top: 1920px;
+      left: 225px;
+    }
+    .container4 div #poster3 {
+      width: 150px;
+      height: 75px;
+      top: 1920px;
+      left: 390px;
+    }
+    .container4 div #poster4 {
+      width: 150px;
+      height: 75px;
+      top: 2064px;
+    }
+    .container4 div #poster5 {
+      width: 150px;
+      height: 75px;
+      top: 2064px;
+      left: 225px;
+    }
+    .container4 div #poster6 {
+      width: 150px;
+      height: 75px;
+      top: 2064px;
+      left: 390px;
+    }
+    c1 > h2 {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    .container4 p {
+      font-size: 7px;
+    }
+  
+    .container5 {
+      display: grid;
+      grid-template-rows: auto;
+    }
+    #ts1 {
+      width: 250px;
+      height: 250px;
+    }
+    #ts2 {
+      width: 250px;
+      height: 250px;
+    }
+    .container6 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    #exclusive-image {
+      width: 350px;
+      height: 200px;
+    }
+    .container7 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    #sub-button {
+      margin: 15px;
+    }
+    .stick {
+      position: fixed;
+      bottom: 5px;
+      left: 10px;
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    * {
+      margin: auto;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+  
+    .links {
+      display: none;
+    }
+    .icons {
+      display: flex;
+    }
+    #menu {
+      display: inline;
+    }
+    .container1 {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    #reviewp {
+      font-size: 50px;
+    }
+    #review-image {
+      width: 450px;
+      height: 300px;
+    }
+    .container2 {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+    .container2 h3 {
+      padding-left: 15px;
+    }
+    .container2 p {
+      padding-left: 15px;
+    }
+    .container3 {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 80px;
+    }
+    #stream-image {
+      width: 450px;
+      height: 300px;
+    }
+    .container4 {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    #video {
+      width: 200px;
+      height: 100px;
+    }
+    #poster1 {
+      width: 200px;
+      height: 100px;
+      top: 1958px;
+    }
+    #poster2 {
+      width: 200px;
+      height: 100px;
+      top: 1958px;
+      left: 350px;
+    }
+    #poster3 {
+      width: 200px;
+      height: 100px;
+      top: 1958px;
+      left: 640px;
+    }
+    #poster4 {
+      width: 200px;
+      height: 100px;
+      top: 2127px;
+    }
+    #poster5 {
+      width: 200px;
+      height: 100px;
+      left: 350px;
+      top: 2127px;
+    }
+    #poster6 {
+      width: 200px;
+      height: 100px;
+      left: 640px;
+      top: 2127px;
+    }
+  
+    c1 > h2 {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    .container4 p {
+      font-size: 7px;
+    }
+  
+    .container5 {
+      display: grid;
+      grid-template-rows: auto;
+    }
+    #ts1 {
+      width: 250px;
+      height: 350px;
+    }
+    #ts2 {
+      width: 250px;
+      height: 350px;
+    }
+    .container6 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    #exclusive-image {
+      width: 450px;
+      height: 300px;
+    }
+    .container7 {
+      flex-direction: column;
+      gap: 20px;
+    }
+    #sub-button {
+      margin: 15px;
+    }
+  }
+  
